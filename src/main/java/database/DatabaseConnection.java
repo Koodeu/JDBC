@@ -17,7 +17,7 @@ public class DatabaseConnection {
         if (instance == null) {
             instance = new DatabaseConnection();
         }
-        return instance
+        return instance;
     }
 
     public Connection getConnection() {
