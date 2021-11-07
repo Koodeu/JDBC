@@ -66,10 +66,10 @@ public class BookDAO {
 
             while (resultSet.next()) {
                 int id = resultSet.getInt("bookId");
-                String title = resultSet.getString("title");
+                String title = resultSet.getString("bookTitle");
                 int pagesNumber = resultSet.getInt("pagesNumber");
                 String categoryName = resultSet.getString("categoryName");
-                String publishersName = resultSet.getString("publishersName");
+                String publishersName = resultSet.getString("publisherName");
                 String author = resultSet.getString("authorFullName");
                 BookDTO book = BookDTO.builder()
                         .id(id)
