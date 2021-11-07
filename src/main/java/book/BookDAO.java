@@ -1,6 +1,6 @@
 package book;
 
-import database.DBConnector;
+import database.DatabaseConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +11,7 @@ public class BookDAO {
 
     public void findBooksTitles(){
 
-        Connection connection = DBConnector.getConnection();
+        Connection connection = DatabaseConnection.getConnection();
 
         String sqlQuery = "select * from books;";
         PreparedStatement preparedStatement = null;
