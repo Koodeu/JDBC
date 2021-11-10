@@ -1,5 +1,7 @@
 import book.BookDAO;
 import book.BookDTO;
+import categories.CategoryDAO;
+import categories.CategoryDTO;
 import publisher.PublisherDAO;
 import publisher.PublisherDTO;
 
@@ -13,8 +15,20 @@ public class Main {
 //        titles.forEach(System.out::println);
 
         PublisherDAO publisherDAO = new PublisherDAO();
-        PublisherDTO publisherDTO = publisherDAO.findPublisher("Wydawnictwo Zgierz");
-        System.out.println(publisherDTO);
+//        PublisherDTO publisherDTO = publisherDAO.findPublisher("Wydawnictwo Zgierz");
+//        System.out.println(publisherDTO);
+
+
+//        CategoryDAO categoryDAO = new CategoryDAO();
+//        int result = categoryDAO.insert("Poradnik majsterkowicza", "Majsterkowanie");
+//        System.out.println(result);
+
+
+
+
+
     }
+
+
 
 }
